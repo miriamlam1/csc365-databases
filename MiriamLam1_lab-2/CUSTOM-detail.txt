@@ -1,0 +1,16 @@
+(a) Source of the data (URL, name of the person or organization who produced the data)
+https://www.kaggle.com/hesh97/titanicdataset-traincsv
+
+(b) A brief description of the tables you defined and the relationships between them
+each passenger has a table and a few things about them as well as their ticket no
+the ticket table has the ticket's price
+the survive table has whether people survived or not
+
+(c) Any mapping challenges you may have encountered.
+names with ' i manually changed
+apparently some children shared the same ticket so i couldnt put a primary key on that
+maybe i should have put a primary key on last name and ticket
+
+(d) Three non-trivial information requests / queries that can be answered using the
+dataset you chose
+you can see the ages of people who died, if rich people survived, and average ticket price

@@ -1,0 +1,310 @@
+// CSC 365
+// Lab 1a test suite
+
+// test1
+// test requirements R3 R4
+// short form command name, existing student
+// expected output:
+// HAVIR,BOBBIE,2,108,HAMER,GAVIN
+
+S: HAVIR
+
+// test2
+// test requirements R3 R4
+// short form command name, nonexistent student
+// expected output: 
+// <empty line>
+
+S: NEMO
+
+// test3
+// test requirements R3 R4
+// short form command name, existing student
+// expected output:
+// HAVIR,BOBBIE,2,108,HAMER,GAVIN
+
+Student: HAVIR
+
+// test4
+// test requirements R3 R4
+// short form command name, nonexistent student
+// expected output: 
+// <empty line>
+
+Student: NEMO
+
+// test5
+// test requirements R3 R5
+// short form command name, existing student, bus
+// expected output: 
+// HAVIR,BOBBIE,0
+
+S: HAVIR B
+
+// test6
+// test requirements R3 R5
+// short form command name, nonexisting student, bus
+// expected output: 
+// <empty line>
+
+Student: NEMO B
+
+// test7
+// test requirements R3 R6
+// short form command name, existing teacher
+// expected output: 
+// STERBACK,PETER
+// FINCHMAN,MATHILDA
+// OBREIN,STAN
+// SAENPHIMMACHA,NUMBERS
+// BREVO,JANNETTE
+// BEAN,INGER
+// FEYEREISEN,WILFREDO
+// WERST,LEON
+// LAMKIN,TAMA
+
+T: NISTENDIRK
+
+// test8
+// test requirements R3 R7
+// short form command name, existing grade
+// expected output: 
+// SCHOENECKER,PHUONG
+// RACANELLO,NOEL
+// STERBACK,PETER
+// FINCHMAN,MATHILDA
+// ZAPPAVIGNA,ELLIOTT
+// OBREIN,STAN
+// CORONADO,DIMPLE
+// SAENPHIMMACHA,NUMBERS
+// BOYTER,WAN
+// BREVO,JANNETTE
+// CLECKLER,FLOY
+// KRAKE,VALENTIN
+// KEMERER,ROSETTA
+// BEAN,INGER
+// DEMARTINI,DEWAYNE
+// CREMEANS,RANDOLPH
+// FEYEREISEN,WILFREDO
+// WERST,LEON
+// LAMKIN,TAMA
+// KREESE,CARRIE
+// FRIEDSTROM,REED
+
+G: 6
+
+// test9
+// test requirements R3 R7
+// short form command name, non-numerical grade
+// expected output: 
+// <empty line>
+
+G: J
+
+// test10
+// test requirements R3 R7
+// short form command name, negative grade
+// expected output: 
+// <empty line>
+
+G: -1
+
+// test11
+// test requirements R3 R8
+// short form command name, existing bus#
+// expected output: 
+// XUAN,COOKUS,3,107
+// SHANTE,ELHADDAD,3,107
+// DEVIN,IMMERMAN,4,105
+// STAN,OBREIN,6,111
+// DIMPLE,CORONADO,6,102
+// DIEDRA,SARAO,2,108
+// TORY,EARLY,3,107
+// ROSETTA,KEMERER,6,102
+
+B: 52
+
+// test12
+// test requirements R3 R8
+// short form command name, nonexistant bus#
+// expected output: 
+// <empty line>
+
+// test13
+// test requirements R3 R9
+// short form command name, existing grade, high
+// expected output:
+// WICINSKY,TERESE,3.22,HAMER,GAVIN
+
+G: 2 H
+
+// test14
+// test requirements R3 R9
+// short form command name, existing grade, low
+// expected output:
+// KOZOLA,BUSTER,2.76,HAMER,GAVIN
+
+G: 2 L
+
+// test15
+// test requirements R3 R9
+// short form command name, existing grade, random flag
+// expected output:
+// <empty line>
+
+G: 2 9
+
+// test16
+// test requirements R3 R10
+// short form command name, no grade
+// expected output:
+// <empty line>
+
+A: 
+
+// test17
+// test requirements R3 R10
+// short form command name, grade with no students
+// expected output:
+// 5,0
+
+A: 5
+
+// test18
+// test requirements R3 R10
+// short form command name, grade with students
+// expected output:
+// 2, 2.946153846153846
+
+A: 2
+
+// test19
+// test requirements R3 R11
+// short form command name, info
+// expected output:
+// 0 : 0
+// 1 : 2
+// 2 : 13
+// 3 : 9
+// 4 : 15
+// 5 : 0
+// 6 : 21
+
+I:
+
+// test20
+// test requirements  R3, R13
+// quit command
+// expected output: program terminates
+
+//Q: moved to bottom so doesnt quit
+
+// test21
+// test requirements  R3, R13
+// short form command name, float input
+// expected output: <empty line>
+
+B: 32.4
+
+////////// NEW TESTS
+
+// test22
+// test requirements  R3, NR1
+// short form command name, correct input
+// expected output: 
+// TODD,LIBRANDI
+// BOBBIE,HAVIR
+// DIEDRA,SARAO
+// MIKE,VANCOTT
+// TERESE,WICINSKY
+// BUSTER,KOZOLA
+// LEIGHANN,MULLINGS
+// BILLY,BUSSMANN
+// DICK,BERBES
+// RANDELL,MULGREW
+// LANE,TOWLEY
+
+C: 108
+
+// test23
+// test requirements  R3, NR2
+// short form command name, teacher
+// expected output: 
+// HAMER,GAVIN
+
+C: 108 T
+
+// test24
+// test requirements  R3, NR3
+// short form command name, teacher
+// expected output: 
+// STEIB,GALE,104
+// HAMER,GAVIN,108
+
+G: 2 T
+
+// test25
+// test requirements  R3, NR4
+// short form command name, correct input
+// expected output: 
+// ROOM:  101 students:  1
+// ROOM:  102 students:  5
+// ROOM:  103 students:  2
+// ROOM:  104 students:  2
+// ROOM:  105 students:  6
+// ROOM:  106 students:  2
+// ROOM:  107 students:  7
+// ROOM:  108 students:  11
+// ROOM:  109 students:  5
+// ROOM:  110 students:  2
+// ROOM:  111 students:  9
+// ROOM:  112 students:  8
+
+E
+
+// test25
+// test requirements  R3, NR5
+// short form command name, analyze teacher
+// expected output: 
+// teacher COOL gpa avg     2.91
+// teacher KERBS gpa avg     2.976
+// teacher FALKER gpa avg     2.995
+// teacher STEIB gpa avg     2.9
+// teacher HANTZ gpa avg     2.9133333333333336
+// teacher BODZIONY gpa avg     3.09
+// teacher FAFARD gpa avg     3.0142857142857147
+// teacher HAMER gpa avg     2.9545454545454546
+// teacher GAMBREL gpa avg     2.96
+// teacher ALPERT gpa avg     3.17
+// teacher NISTENDIRK gpa avg     2.962222222222222
+// teacher CHIONCHIO gpa avg     2.985
+
+N T
+
+// test26
+// test requirements  R3, NR5
+// short form command name, analyze bus
+// expected output: 
+// bus 0 gpa avg     2.9525
+// bus 51 gpa avg     3.02
+// bus 52 gpa avg     2.885
+// bus 53 gpa avg     3.0555555555555554
+// bus 54 gpa avg     2.941666666666667
+// bus 55 gpa avg     3.0366666666666666
+// bus 56 gpa avg     2.9216666666666664
+
+N B
+
+// test27
+// test requirements  R3, NR5
+// short form command name, analyze grade
+// expected output: 
+// grade  1 gpa avg 2.995
+// grade  2 gpa avg 2.946153846153846
+// grade  3 gpa avg 3.048888888888889
+// grade  4 gpa avg 2.951333333333334
+// grade  6 gpa avg 2.9771428571428578
+
+N G
+
+Q
